@@ -15,7 +15,17 @@ public class Assignment1SalaryCalculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        int perHour = 13;
+        int yearly = 30000;
+        double taxRate = .22;
+        
+        Calculator calc = new Calculator();
+        calc.calcSalary(13);
+        calc.calcHourly(yearly);
+        calc.takeHomePerMonth(yearly, taxRate);
+        calc.calcTaxes(yearly, taxRate);
+        
     }
     
 }
